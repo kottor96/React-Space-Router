@@ -4,7 +4,7 @@ import logo from '../assets/shared/logo.svg'
 
 export default function NavBar(){
     return(
-        <nav>
+        <nav id='navBase'>
             <div>
                 <img src={logo} alt="logo"/>
             </div>
