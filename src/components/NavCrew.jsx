@@ -1,4 +1,6 @@
-export default function navCrew({data}){
+import {NavLink} from 'react-router-dom'
+
+export default function NavCrew({data}){
     return(
         <div id='crewNav'>
             {data.map((el)=> 

@@ -1,6 +1,6 @@
 import {useParams} from 'react-router-dom'
 import data from "../../data/crewmate.json";
-import NavSousPage from '../../components/NavSousPage';
+import NavCrew from "../../components/NavCrew";
 
 export default function CrewMate() {
     const {titre} = useParams()
