@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/shared/logo.svg'
 
 
@@ -9,10 +9,10 @@ export default function NavBar(){
                 <img src={logo} alt="logo"/>
             </div>
             <div>
-                <Link to={'/'}>01 HOME</Link>
-                <Link to={'/Destination'}>02 DESTINATION</Link>
-                <Link to={'/Crew'}>03 CREW</Link>
-                <Link to={'/Tech'}>04 TECHONOLOGY</Link>
+                <NavLink to={'/'}>01 HOME</NavLink>
+                <NavLink to={'/Destination'}>02 DESTINATION</NavLink>
+                <NavLink to={'/Crew'}>03 CREW</NavLink>
+                <NavLink to={'/Tech'}>04 TECHONOLOGY</NavLink>
             </div>
         </nav>
     )

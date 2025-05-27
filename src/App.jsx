@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import { Routes,Route } from 'react-router-dom'
+import { Routes,Route,Navigate } from 'react-router-dom'
 import Home from './pages/home'
+import Destination from './pages/destination/Destination'
+import Destination_lieu from './pages/destination/Destination_lieu'
 
 
 function App() {
@@ -9,8 +11,9 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/Destination'>
-          <Route path=':destination'/>
+        <Route path='/Destination' element={<Destination/>}>
+          <Route index element={<Navigate to="MOON" replace/>}/>
+          <Route path=':destination' element={<Destination_lieu/>}/>
         </Route>
         <Route path='/Crew'>
           <Route path=':crew'/>
