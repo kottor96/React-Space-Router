@@ -4,9 +4,9 @@ import NavCrew from "../../components/NavCrew";
 
 export default function CrewMate() {
     const {titre} = useParams()
-
+    
     const individu = data.find(el=>el.titre === titre)
-
+    
     const img = `/assets/crew/image-${individu.nom.toLowerCase()}-${individu.prenom.toLowerCase()}.webp`
 
     return(

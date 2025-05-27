@@ -4,7 +4,7 @@ export default function NavTech({data}){
     return(
         <nav>
             {data.map((el)=>(
-                <NavLink key={el.id} to={`Tech/${el.}`}></NavLink>
+                <NavLink key={el.id} to={`/Tech/${el.etape}`}>{el.id}</NavLink>
             ))}
         </nav>
         

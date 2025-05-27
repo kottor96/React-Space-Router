@@ -6,6 +6,7 @@ import Destination_lieu from './pages/destination/Destination_lieu'
 import NavBar from './components/Nav'
 import CrewMate from './pages/crew/CrewMate'
 import Crew from './pages/crew/Crew'
+import TechMoushou from './pages/TechMoushou/TechMoushou'
 
 function App() {
 
@@ -23,8 +24,8 @@ function App() {
           <Route path=':titre' element={<CrewMate/>}/>
         </Route>
         <Route path='/Tech'>
-          <Route index element={<Navigate to="vehicle"/>}/>
-          <Route path=':tech' element={<CrewMate/>}/>
+          <Route index element={<Navigate to="Launch vehicle"/>}/>
+          <Route path=':tech' element={<TechMoushou/>}/>
         </Route>
         <Route path='*' />
       </Routes>
