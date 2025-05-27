@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import data from "../../data/destination.json";
 import NavSousPage from "../../components/NavSousPage";
 
+
 export default function Destination_lieu(){
     const {destination} = useParams()
     
@@ -10,12 +11,12 @@ export default function Destination_lieu(){
     
 
     return(
-        <div className={planete.destination.toLowerCase}>
+        <div className={planete.destination.toLowerCase()}>
             <div>
-                <img src={planete.img} alt={planete.destination.toLowerCase} />
+                <img src={planete.img} alt={planete.destination.toLowerCase()} />
             </div>
             <div>
-                <NavSousPage/>
+                <NavSousPage data={data}/>
                 <h3>{planete.destination}</h3>
                 <p>{planete.text}</p>
                 <hr />

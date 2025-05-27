@@ -26,6 +26,7 @@ function App() {
           <Route index element={<Navigate replace/>}/>
           <Route path=':tech' element={<CrewMate/>}/>
         </Route>
+        <Route path='*' />
       </Routes>
     </>
   )
