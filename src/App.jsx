@@ -15,15 +15,15 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Destination' element={<Destination/>}>
-          <Route index element={<Navigate to="MOON" replace/>}/>
+          <Route index element={<Navigate to="MOON"/>}/>
           <Route path=':destination' element={<Destination_lieu/>}/>
         </Route>
         <Route path='/Crew' element={<Crew/>}>
-          <Route index element={<Navigate to="Commander" replace/>}/>
+          <Route index element={<Navigate to="Commander"/>}/>
           <Route path=':titre' element={<CrewMate/>}/>
         </Route>
         <Route path='/Tech'>
-          <Route index element={<Navigate replace/>}/>
+          <Route index element={<Navigate to="vehicle"/>}/>
           <Route path=':tech' element={<CrewMate/>}/>
         </Route>
         <Route path='*' />
