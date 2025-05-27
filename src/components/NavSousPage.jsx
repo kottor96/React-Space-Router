@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import data from "../data/destination.json";
 
-export default function NavSousPage({el}){
+export default function NavSousPage(){
 
 
     return(

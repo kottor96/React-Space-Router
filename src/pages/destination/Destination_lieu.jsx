@@ -6,9 +6,6 @@ export default function Destination_lieu(){
     const {destination} = useParams()
     
     const planete = data.find(el=>el.destination === destination)
-    console.log(data[3].destination);
-    console.log(data);
-    console.log(destination);
     
     
 

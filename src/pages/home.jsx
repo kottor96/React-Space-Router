@@ -1,11 +1,9 @@
-import NavBar from "../components/Nav";
 
 export default function Home({}){
     
     
     return(
         <>
-            <NavBar/>
             <section id="homePage">
                 <div>
                     <div className="pageHead">
