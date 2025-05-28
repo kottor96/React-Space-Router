@@ -3,8 +3,12 @@
 #pageCrew
     display: flex
     flex-direction: column
-    
+    h2
+        margin-left: 5rem
+
+
     .crew
+        padding: 5rem
         display: flex
         justify-content: space-around
         #crewNav
@@ -19,7 +23,12 @@
                 cursor: pointer
             .active
                 background-color: $white
-        
+        >div:first-child
+            width: 30%
+        >div:last-child
+            width: 30%
+            img
+                width: 100%
     
     
     

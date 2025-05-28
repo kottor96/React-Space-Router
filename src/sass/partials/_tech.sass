@@ -1,4 +1,37 @@
-#pageTech   
+@use './_variable' as *
+
+    
+    
+#pageTech
+    h2
+        margin-left: 5rem
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    .techContainer
+        padding: 4rem
+        display: flex   
+        gap: 5rem
+    nav
+        display: flex
+        flex-direction: column
+        height: 100%
+        justify-content: space-evenly
+        a
+            border-radius: 50%
+        button
+            
+            height: 2rem
+            aspect-ratio: 1/1
+            border-radius: 50%
+            cursor: pointer
+            background: rgba($white , 0)
+            border: 1px solid $white !important
+        
+        button:hover
+            background-color: $white
+        .active
+            background-color: $white
     
     
     @media screen and ( min-width: 768px )

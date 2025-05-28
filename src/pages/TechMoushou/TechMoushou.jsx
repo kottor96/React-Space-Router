@@ -7,9 +7,9 @@ export default function TechMoushou() {
     const {tech} = useParams()
     
     const techAficher = data.find(el=>el.etape.toLocaleLowerCase()===tech.toLocaleLowerCase())
-    
+                
     return(
-        <div>
+        <div className='techContainer'>
             <div>
                 <NavTech data={data}/>
             </div>
