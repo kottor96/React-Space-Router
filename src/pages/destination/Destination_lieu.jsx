@@ -8,14 +8,14 @@ export default function Destination_lieu(){
     
     const planete = data.find(el=>el.destination === destination)
     
-    
+    const ta = planete.destination.toLowerCase()+' planet' ;
 
     return(
-        <div className={planete.destination.toLowerCase()}>
-            <div>
+        <div className={ta}>
+            <div className="planetImg">
                 <img src={planete.img} alt={planete.destination.toLowerCase()} />
             </div>
-            <div>
+            <div className="planetDescription">
                 <NavSousPage data={data}/>
                 <h3>{planete.destination}</h3>
                 <p>{planete.text}</p>
