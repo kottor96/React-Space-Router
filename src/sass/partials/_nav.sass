@@ -1,5 +1,39 @@
+@use './_variable' as *
+    
 #navBase
+    
     display: flex
-    position: fixed
-    top: 0
-    backdrop-filter: blur(2)
+    justify-content: space-between
+    width: 100%
+    position: fixed 
+    box-sizing: border-box
+    top: 1rem
+    z-index: 2
+    .logo
+        padding: 1.5rem
+        display: flex
+        align-items: center
+        justify-content: center
+        
+    .space
+        height: 1px
+        flex-grow: 1
+        background-color: $white
+        align-self: center
+        margin: 0 1rem
+
+    .link
+        backdrop-filter: blur(4px)
+        background-color: rgba($gris,0.2 )
+        align-items: center
+        justify-content: center
+        // padding: 1rem
+        display: flex
+        padding: 1rem 5rem 
+        padding-right: 15vw
+        padding-left: 10vw 
+        gap: 2rem
+
+    a
+        color: $white
+        text-decoration: none

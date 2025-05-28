@@ -1,18 +1,115 @@
-/* Error: Expected expression.
- *   ,
- * 5 |     color: 
- *   |            ^
- *   '
- *   src\sass\partials\_base.sass 5:12  @use
- *   src\sass\main.sass 1:1             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 5 \2502      color: \a   \2502             ^\a   \2575 \a   src\\sass\\partials\\_base.sass 5:12  @use\a   src\\sass\\main.sass 1:1             root stylesheet";
+body {
+  margin: 0;
+  color: rgb(255, 255, 255);
 }
+
+section {
+  padding-top: 30vh !important;
+}
+
+#homePage {
+  min-height: 100vh;
+  display: flex;
+  padding: 5rem 4rem;
+  justify-content: space-around;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+#homePage div {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+#homePage #homeText {
+  width: 50%;
+}
+#homePage #homeText p {
+  width: 70%;
+  margin: 0;
+}
+#homePage #homeText p:first-child {
+  font-size: 1.3rem;
+}
+#homePage #homeText p:last-child {
+  font-size: 1rem;
+}
+#homePage #homeText h1 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 9em;
+}
+#homePage #homeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+#homePage #homeBtn a {
+  width: 90%;
+  aspect-ratio: 1/1;
+  border: none;
+}
+#homePage #homeBtn a button {
+  font-size: 1.3rem;
+  font-weight: 200;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+#homePage #homeBtn a button:hover {
+  filter: brightness(0.8);
+}
+@media screen and (min-width: 768px) {
+  #homePage {
+    background-image: url("./assets/home/background-home-desktop.jpg");
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  #homePage {
+    background-image: url("./assets/home/background-home-tablet.jpg");
+  }
+}
+
+#navBase {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  box-sizing: border-box;
+  top: 1rem;
+  z-index: 2;
+}
+#navBase .logo {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navBase .space {
+  height: 1px;
+  flex-grow: 1;
+  background-color: rgb(255, 255, 255);
+  align-self: center;
+  margin: 0 1rem;
+}
+#navBase .link {
+  backdrop-filter: blur(4px);
+  background-color: rgba(73, 74, 83, 0.2);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 1rem 5rem;
+  padding-right: 15vw;
+  padding-left: 10vw;
+  gap: 2rem;
+}
+#navBase a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */

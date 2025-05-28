@@ -5,10 +5,11 @@ import logo from '../assets/shared/logo.svg'
 export default function NavBar(){
     return(
         <nav id='navBase'>
-            <div>
+            <div className='logo'>
                 <img src={logo} alt="logo"/>
             </div>
-            <div>
+            <div className='space'></div>
+            <div className='link'>
                 <NavLink to={'/'}>01 HOME</NavLink>
                 <NavLink to={'/Destination'}>02 DESTINATION</NavLink>
                 <NavLink to={'/Crew'}>03 CREW</NavLink>
