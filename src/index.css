@@ -107,6 +107,9 @@ h2 {
   flex-direction: column;
   min-height: 100vh;
 }
+#pageTech .divCentral {
+  width: 50%;
+}
 #pageTech .techContainer {
   box-sizing: border-box;
   padding: 4rem;
@@ -157,6 +160,7 @@ h2 {
   flex-direction: column;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 #pageCrew .crew {
   padding: 5rem;

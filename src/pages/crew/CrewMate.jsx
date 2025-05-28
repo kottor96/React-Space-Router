@@ -7,7 +7,7 @@ export default function CrewMate() {
     
     const individu = data.find(el=>el.titre === titre)
     
-    const img = `/assets/crew/image-${individu.nom.toLowerCase()}-${individu.prenom.toLowerCase()}.webp`
+    const img = `/React-Space-Router/assets/crew/image-${individu.nom.toLowerCase()}-${individu.prenom.toLowerCase()}.webp`
 
     return(
         <div className={`${individu.nom.toLowerCase()} crew`}>
