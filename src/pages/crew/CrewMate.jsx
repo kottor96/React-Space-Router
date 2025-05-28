@@ -11,16 +11,16 @@ export default function CrewMate() {
 
     return(
         <div className={`${individu.nom.toLowerCase()} crew`}>
-            <div>
+            <div className='textCrew'>
                 <div className='crewPresentation'>
-                    <h3>{individu.titre}</h3>
-                    <h3>{individu.nom} {individu.prenom}</h3>
+                    <h3 className='titre'>{individu.titre}</h3>
+                    <h3 className='nom'>{individu.nom} {individu.prenom}</h3>
                     <p>{individu.presentation}</p>
                 </div>
                 <NavCrew data={data}/>
                 
             </div>
-            <div>
+            <div className='imgCrew'>
                 <img src={img} alt={individu.nom} />
             </div>
         </div>

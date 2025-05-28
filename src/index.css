@@ -11,15 +11,17 @@ section {
   color: rgb(73, 74, 83);
 }
 
+h2 {
+  margin-left: 5rem;
+  font-size: 3em;
+}
+
 #pageDestination {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-}
-#pageDestination h2 {
-  margin-left: 5rem;
 }
 #pageDestination .planet {
   padding: 2rem 5rem;
@@ -99,14 +101,14 @@ section {
 }
 
 #pageTech {
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-#pageTech h2 {
-  margin-left: 5rem;
-}
 #pageTech .techContainer {
+  box-sizing: border-box;
   padding: 4rem;
   display: flex;
   gap: 5rem;
@@ -153,14 +155,38 @@ section {
 #pageCrew {
   display: flex;
   flex-direction: column;
-}
-#pageCrew h2 {
-  margin-left: 5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #pageCrew .crew {
   padding: 5rem;
   display: flex;
   justify-content: space-around;
+}
+#pageCrew .crew .titre {
+  color: rgb(210, 216, 249);
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+#pageCrew .crew .nom {
+  margin: 0;
+  margin-bottom: 3rem;
+  color: rgb(255, 255, 255);
+  font-size: 2.5em;
+}
+#pageCrew .crew .textCrew {
+  gap: 5rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#pageCrew .crew .imgCrew {
+  width: 40%;
+}
+#pageCrew .crew .imgCrew img {
+  width: 100%;
 }
 #pageCrew .crew #crewNav {
   display: flex;
@@ -176,15 +202,6 @@ section {
 }
 #pageCrew .crew #crewNav .active {
   background-color: rgb(255, 255, 255);
-}
-#pageCrew .crew > div:first-child {
-  width: 30%;
-}
-#pageCrew .crew > div:last-child {
-  width: 30%;
-}
-#pageCrew .crew > div:last-child img {
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   #pageCrew {
@@ -266,6 +283,11 @@ section {
 @media screen and (max-width: 768px) and (min-width: 425px) {
   #homePage {
     background-image: url("./assets/home/background-home-tablet.jpg");
+  }
+}
+@media screen and (max-width: 425px) {
+  #homePage {
+    background-image: url("./assets/home/background-home-mobile.jpg");
   }
 }
 
