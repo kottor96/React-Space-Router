@@ -111,6 +111,7 @@ h2 {
   width: 50%;
 }
 #pageTech .techContainer {
+  align-items: center;
   box-sizing: border-box;
   padding: 4rem;
   display: flex;
@@ -121,23 +122,42 @@ h2 {
   flex-direction: column;
   height: 100%;
   justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
 }
 #pageTech nav a {
   border-radius: 50%;
 }
 #pageTech nav button {
-  height: 2rem;
+  color: rgb(255, 255, 255);
+  height: 5rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
   cursor: pointer;
   background: rgba(255, 255, 255, 0);
   border: 1px solid rgb(255, 255, 255) !important;
+  transition: 0.2s;
 }
 #pageTech nav button:hover {
   background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
-#pageTech nav .active {
+#pageTech nav .active button {
+  color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
+}
+#pageTech div:first-child {
+  flex: 1;
+}
+#pageTech div:nth-of-type(2) {
+  flex: 3;
+}
+#pageTech div:last-of-type {
+  flex: 2;
+}
+#pageTech div:last-of-type img {
+  width: 100%;
+  min-width: 400px;
 }
 @media screen and (min-width: 768px) {
   #pageTech {
@@ -335,6 +355,45 @@ h2 {
 }
 #navBase .active {
   border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {
+  #homePage {
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #homePage #homeText {
+    width: 100%;
+    align-items: center;
+  }
+  #homePage .pageBody {
+    align-items: center;
+  }
+  .planet {
+    flex-direction: column-reverse;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .planet .planetImg {
+    display: flex;
+    justify-content: center;
+  }
+  .planet .planetImg img {
+    width: 100%;
+  }
+  .techContainer {
+    flex-wrap: wrap;
+  }
+  #navBase .link {
+    padding: 0.2rem 0.5rem;
+  }
+  #navBase a {
+    padding: 1rem 0.2rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
