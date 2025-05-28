@@ -51,7 +51,7 @@ h2 {
 #pageDestination .planet .planetDescription {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  gap: 2rem;
 }
 #pageDestination .planet .planetDescription nav {
   display: flex;
