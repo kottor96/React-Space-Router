@@ -10,10 +10,10 @@ export default function NavBar(){
             </div>
             <div className='space'></div>
             <div className='link'>
-                <NavLink to={'/'}>01 HOME</NavLink>
-                <NavLink to={'/Destination'}>02 DESTINATION</NavLink>
-                <NavLink to={'/Crew'}>03 CREW</NavLink>
-                <NavLink to={'/Tech'}>04 TECHONOLOGY</NavLink>
+                <NavLink to={'/'}>00 HOME</NavLink>
+                <NavLink to={'/Destination'}>01 DESTINATION</NavLink>
+                <NavLink to={'/Crew'}>02 CREW</NavLink>
+                <NavLink to={'/Tech'}>03 TECHONOLOGY</NavLink>
             </div>
         </nav>
     )
