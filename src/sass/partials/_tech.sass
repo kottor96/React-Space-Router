@@ -8,15 +8,19 @@
     display: flex
     flex-direction: column
     min-height: 100vh
+    box-sizing: border-box
+
     
     .divCentral
         width: 50%
     .techContainer
+        gap: 2rem
+        justify-content: space-between
         align-items: center
         box-sizing: border-box
         padding: 4rem
-        display: flex   
-        gap: 5rem
+        display: flex
+   
     nav
         display: flex
         flex-direction: column
@@ -42,16 +46,19 @@
             button
                 color: $black
                 background-color: $white
-    
     div:first-child 
-        flex: 1
+        flex: 2 2 auto
     div:nth-of-type(2) 
-        flex: 3
+        flex: 5 2 auto
     div:last-of-type 
-        flex: 2
+        flex: 2 2 auto
+        align-items: center
+        height: 100%
         img
+            flex-shrink: 0
             width: 100%
             min-width: 400px
+            height: 100%
 
 
     
